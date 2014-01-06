@@ -47,3 +47,11 @@
 // Utility classes
 @import "utilities";
 @import "responsive-utilities";
+
+.cover {
+	img {
+		height: 75%;
+		width: 75%;
+		margin-left: 15%;
+	}
+}
