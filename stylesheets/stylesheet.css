@@ -1,0 +1,96 @@
+/* line 12, ../sass/stylesheet.scss */
+html {
+  background-color: #f1f0ec;
+  height: 100%;
+}
+/* line 15, ../sass/stylesheet.scss */
+html body {
+  margin: 0 auto;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* line 22, ../sass/stylesheet.scss */
+html body header {
+  display: block;
+  top: 30px;
+  left: 130px;
+  position: absolute;
+  z-index: 30;
+}
+/* line 29, ../sass/stylesheet.scss */
+html body main {
+  height: 90%;
+  width: 100%;
+  position: absolute;
+  /*.song4 {
+  	background-color: $tan;
+  	float: right;
+  	top: 50%;
+  	right: 0;
+  	margin-right: 335px;
+  }*/
+}
+/* line 33, ../sass/stylesheet.scss */
+html body main div {
+  height: 100%;
+  width: 33.33%;
+  display: inline-block;
+  float: left;
+}
+/* line 39, ../sass/stylesheet.scss */
+html body main .song1 {
+  background-color: #dddad6;
+}
+/* line 42, ../sass/stylesheet.scss */
+html body main .song2 {
+  background-color: #f9f1b5;
+}
+/* line 45, ../sass/stylesheet.scss */
+html body main .song3 {
+  background-color: #a6d8de;
+}
+/* line 56, ../sass/stylesheet.scss */
+html body footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 1000;
+  height: 10%;
+}
+/* line 62, ../sass/stylesheet.scss */
+html body footer .footer-content {
+  height: 100%;
+  display: block;
+  background-color: #3e3e40;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+/* line 69, ../sass/stylesheet.scss */
+html body footer .footer-content a {
+  color: #7c7a7d;
+  text-decoration: none;
+}
+/* line 73, ../sass/stylesheet.scss */
+html body footer .footer-content .legal {
+  display: block;
+  position: relative;
+  float: left;
+  margin-left: 16px;
+}
+/* line 79, ../sass/stylesheet.scss */
+html body footer .footer-content nav {
+  float: right;
+  position: relative;
+  z-index: 0;
+  display: block;
+  margin: 16px 30px;
+}
+/* line 86, ../sass/stylesheet.scss */
+html body footer .footer-content .social {
+  margin: 16px 30px;
+  float: right;
+}
