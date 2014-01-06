@@ -1,92 +1,49 @@
-@import "compass";
+// Core variables and mixins
+@import "variables";
+@import "mixins";
 
-$white: #ffffff;
-$background: #f1f0ec;
-$grey: #dddad6;
-$yellow: #f9f1b5;
-$aqua: #a6d8de;
-$tan: #ae9c96;
-$darkGrey: #3e3e40;
-$fontGrey: #7c7a7d;
+// Reset
+@import "normalize";
+@import "print";
 
-html {
-	background-color: $background;
-	height: 100%;
-	body {
-		margin: 0 auto;
-		z-index: 1;
-		overflow: hidden;
-		width: 100%;
-		height: 100%;
-		position: relative;
-		header {
-			display: block;
-			top: 30px;
-			left: 130px;
-			position: absolute;
-			z-index: 30;
-		}
-		main {
-			height: 90%;
-			width: 100%;
-			position: absolute;
-			div {
-				height: 100%;
-				width: 33.33%;
-				display: inline-block;
-				float: left;
-			}
-			.song1 {
-				background-color: $grey;
-			}
-			.song2 {
-				background-color: $yellow;
-			}
-			.song3 {
-				background-color: $aqua;
-			}
-			/*.song4 {
-				background-color: $tan;
-			}*/
-		}
-		footer {
-			position: fixed;
-			width: 100%;
-			bottom: 0;
-			z-index: 1000;
-			height: 10%;
-			.footer-content {
-				height: 100%;
-				display: block;
-				background-color:  $darkGrey;
-				position: absolute;
-				z-index: 1;
-				width: 100%;
-				a {
-					color: $fontGrey;
-					text-decoration: none;
-				}
-				.legal {
-					display: block;
-					position: relative;
-					float: left;
-					margin-left: 16px;
-				}
-				nav {
-					float: right;
-					position: relative;
-					z-index: 0;
-					display: block;
-					margin: 16px 30px;
-				}
-				.social {
-					margin: 16px 30px;
-					float: right;
-					a{
+// Core CSS
+@import "scaffolding";
+@import "type";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
 
-					}
-				}
-			}
-		}
-	}
-}
+// Components
+@import "component-animations";
+@import "glyphicons";
+@import "dropdowns";
+@import "button-groups";
+@import "input-groups";
+@import "navs";
+@import "navbar";
+@import "breadcrumbs";
+@import "pagination";
+@import "pager";
+@import "labels";
+@import "badges";
+@import "jumbotron";
+@import "thumbnails";
+@import "alerts";
+@import "progress-bars";
+@import "media";
+@import "list-group";
+@import "panels";
+@import "wells";
+@import "close";
+
+// Components w/ JavaScript
+@import "modals";
+@import "tooltip";
+@import "popovers";
+@import "carousel";
+
+// Utility classes
+@import "utilities";
+@import "responsive-utilities";
