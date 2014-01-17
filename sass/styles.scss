@@ -1,8 +1,8 @@
-@mixin phone {
-	@media only screen and (max-width: 480px) {
-		@content;
-	}
-}
+@import "compass";
+@import "compass/css3/transition";
+
+$phones: "only screen and (max-width: 480px)";
+$tablets: "only screen and (max-width: 768px)";
 
 $paleGreen: #85826b;
 $paleYellow: #dcd292;
@@ -24,34 +24,81 @@ a {
 	min-height: 100%;
 	height: auto;
 	margin: 0 auto -344px;
+	// ### MOBILE NAV AND MENU BUTTON ### 
 	.mobile-nav {
 		display: none;
-		cursor: pointer;
-		width: 300px;
-		margin: 0 auto;
-		position: absolute;
-		ul {
-			margin: 0;
-			padding: 0;
-		}
-		li {
-			list-style: none;
-			padding: 0;
-			margin: 0;
-			float: left;
-			margin-right: 10px;
-			font-size: 12px;
-			line-height: 20px;
+	}
+	@media #{$phones} {
+		.mobile-nav {
 			display: none;
-			a {
-				background-color: $paleGreen;
-				color: $paleYellow;
-				text-decoration: none;
-				display: block;
-				padding: 20px;			
+			z-index: 1000;
+			width: 300px;
+			height: 500px;
+			margin: 0 auto;
+			.menu-icon{
+				&:before {
+	        		content: "\2261";
+	        		font-size: 4em;
+	        		color: $paleGreen;
+	      		}
+			    display: block;
+			    position: absolute;
+			    padding: 0 132.5px;
+			    margin: 0 auto;
+			    top: -15px;
+			    z-index: 1000;
+			}
+			ul {
+				display: none;
+
+				li {
+					float:	none;
+					display: block;
+					margin: 0;
+					padding: 0;
+				}
+			}
+			.mobile-title {
+				font-size: 24px;
+				font-family: "Engravers MT";
+				width: 300px;
+				margin: 200px auto 0 auto;
+				color: $paleGreen;
+				text-align: center;
 			}
 		}
+		.mobile-nav.is-tapped  > ul {
+			display:  block;
+			position: absolute;
+			margin: 0;
+			right: 0;
+			top: 0;
+			z-index: 100;
+			padding-top: 40px;
+			width: 100%;
+			background: rgba(255,255,255,.7);
+			a {
+				@include box-sizing(border-box);
+				width: 100%;
+				display: block;
+				padding: 10px 20px;
+				height: auto;
+				color: $paleGreen;
+				font-size: 18px;
+				line-height: 20px;
+				font-family: "Impact";
+				text-align: center;
+				text-decoration: none;  
+				-webkit-font-smoothing: antialiased;
+			}
+		}	
+		@media #{$phones} {
+			.mobile-nav {
+				display: block;
+			}
+		}				
 	}
+	//## END MOBILE NAV
 	nav {
 		font-size: 16px;
 		margin: 0 141px 0 141px;
@@ -115,26 +162,13 @@ a {
 				color: #847930; /* pick color */
 				text-decoration: none;
 			}
-			@include phone {
-				.michaelKelly {
-					font-size: 30px;
-					top: 0;
-					left: 0;
-					width: 300px;
-					margin: 190px auto 0 auto;
-				}
-				.vidoes, .photographs, .social, .download, .contact, .ribs, .listen, .bio {
-					display: none;
-				}
-			}
 		}
 	}
-	@include phone {
+	@media #{$phones} {
 		nav {
-			width: 300px;
-			margin: 0 auto;
+			display: none;
 		}
-	}	
+	}
 	.deer-home {
 		width: 918px;
 		margin: 0 auto;
@@ -144,7 +178,7 @@ a {
 			width: 100%;
 		}
 	}
-	@include phone {
+	@media #{$phones} {
 		.deer-home {
 			display: none;
 		}
@@ -161,19 +195,20 @@ a {
 			width: 90%;
 		}
 	}
-	@include phone {
+	@media #{$phones} {
 		.deer {
 			display: block;
 		}	
 	}
 }
-@include phone {
+@media #{$phones} {
 	.container {
 		width: 300px;
 		padding: 0;
 		margin: 0 auto;
 	}
 }
+
 .top, .right, .bottom, .left {
 	background-color: $white;
 	position: fixed;
@@ -201,9 +236,9 @@ a {
 .left {
 	left: 0;
 }
-@include phone {
+@media #{$phones} {
 	.top, .right, .bottom, .left {
 		display: none;
 	}
-}	
+}  	
 
