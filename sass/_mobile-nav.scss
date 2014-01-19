@@ -1,0 +1,68 @@
+.mobile-nav {
+	display: none;
+}	
+@media #{$phones} {
+	.mobile-nav {
+		display: block;
+		z-index: 1000;
+		width: 300px;
+		height: 500px;
+		margin: 0 auto;
+		.menu-icon{
+			&:before {
+        		content: "\2261";
+        		font-size: 4em;
+        		color: $paleGreen;
+      		}
+		    display: block;
+		    position: absolute;
+		    padding: 0 132.5px;
+		    margin: 0 auto;
+		    top: -15px;
+		    z-index: 1000;
+		}
+		ul {
+			display: none;
+
+			li {
+				float:	none;
+				display: block;
+				margin: 0;
+				padding: 0;
+			}
+		}
+		.mobile-title {
+			font-size: 24px;
+			font-family: "Engravers MT";
+			width: 300px;
+			margin: 200px auto 0 auto;
+			color: $paleGreen;
+			text-align: center;
+		}
+	}
+	.mobile-nav.is-tapped  > ul {
+		display:  block;
+		position: absolute;
+		margin: 0;
+		right: 0;
+		top: 0;
+		z-index: 100;
+		padding-top: 40px;
+		width: 100%;
+		background: rgba(255,255,255,.7);
+		a {
+			@include box-sizing(border-box);
+			width: 100%;
+			display: block;
+			padding: 10px 20px;
+			height: auto;
+			color: $paleGreen;
+			font-size: 18px;
+			line-height: 20px;
+			font-family: "Impact";
+			text-align: center;
+			text-decoration: none;  
+			-webkit-font-smoothing: antialiased;
+		}
+	}					
+}	

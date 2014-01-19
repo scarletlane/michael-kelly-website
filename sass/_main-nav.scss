@@ -1,0 +1,70 @@
+nav {
+	font-size: 16px;
+	margin: 0 141px 0 141px;
+	height: 922px;
+	width: 918px;
+	overflow: auto;
+	position: absolute;
+	z-index: 10;
+	.nav-button {
+		display: none;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		li {
+			float: left;
+			list-style: none;
+			position: absolute;
+		}	
+		.michaelKelly {
+			top: 185px;
+			left: 154px;
+			text-align: center;
+			a{
+				color: $paleYellow;
+			}
+		}
+		.videos {
+			top: 308px;
+			left: 441px;
+		}
+		.photographs{
+			top: 300px;
+			left: 659px;
+		}
+		.social {
+			top: 490px;
+			left: 750px;
+		}
+		.download {
+			top: 720px;
+			left: 660px;
+		}
+		.contact {
+			top: 605px;
+			left: 415px;
+		}
+		.ribs {
+			top: 697px;
+			left: 250px;
+		}
+		.listen {
+			top: 552px;
+			left: 143px;
+		}
+		.bio {
+			top: 430px;
+			left: 110px;
+		}
+		a:hover {
+			color: #847930; /* pick color */
+			text-decoration: none;
+		}
+	}
+}
+@media #{$phones} {
+	nav {
+		display: none;
+	}
+}
