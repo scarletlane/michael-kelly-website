@@ -1,4 +1,4 @@
-nav {
+.homenav {
 	font-size: 16px;
 	margin: 0 141px 0 141px;
 	height: 922px;
@@ -64,7 +64,7 @@ nav {
 	}
 }
 @media #{$phones} {
-	nav {
+	.homenav {
 		display: none;
 	}
 }
