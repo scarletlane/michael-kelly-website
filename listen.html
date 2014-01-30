@@ -18,7 +18,7 @@
         <nav class="navbar">
             <div class="navbar-header">
                 <a class="navbar-title" href="http://www.officialmichaelkelly.com">Michael Kelly</a>
-            </div>
+            </div><!-- /.navbar-header -->
             <div class="navbar-collapse">
                 <ul>
                     <li class="home"><a href="http://www.officialmichaelkelly.com">Home</a></li>
@@ -30,11 +30,16 @@
                     <li class="bio"><a href="bio.html">Bio</a></li>
                     <li class="contact"><a href="contact.html">Contact</a></li>
                 </ul>  
-            </div>  
-        </nav>
+            </div><!-- /.navbar-collapse -->  
+        </nav><!-- /.navbar -->
 
         <div class="content">
-        </div>    
+            <object height="81" width="100%" id="player" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+                <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fsoundcloud.com%2Fmatas%2Fhobnotropic&enable_api=true&object_id=player"></param>
+                <param name="allowscriptaccess" value="always"></param>
+                <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fsoundcloud.com%2Fmatas%2Fhobnotropic&enable_api=true&object_id=player" type="application/x-shockwave-flash" width="100%" name="player"></embed>
+            </object>
+        </div><!-- /.content -->    
 
 
     </div><!-- /.container --> 
@@ -46,5 +51,11 @@
 
     <script src="js/jquery-2.0.3.min.js"></script>
     <script src="js/application.js"></script>
+    <script type="text/javascript" src="js/soundcloud.player.api.js"></script>
+    <script type="text/javascript">
+   soundcloud.addEventListener('onPlayerReady', function(player, data) {
+     player.api_play();
+   });
+    </script>
   </body>
 </html>

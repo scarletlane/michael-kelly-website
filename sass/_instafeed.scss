@@ -1,0 +1,15 @@
+#instafeed {
+	margin: 0 20px;
+	a {
+		padding:5px 5px 1px 5px;
+		margin:10px;
+		display:inline-block;
+		position:relative;
+	}
+	img {
+		width: 200px;
+	}
+	img:hover {
+			@include scale(1.2);
+	}
+}
