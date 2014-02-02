@@ -7,12 +7,14 @@ $(document).ready(function() {
 		 return false;
 	});
 
-	var userFeed = new Instafeed({
-		get: 'user',
-        userId: 31038635,
-        accessToken: '31038635.467ede5.dc9e5064db244367b5ae6963922831c2',
-        limit: 30,
-	});
-	userFeed.run();
+	function sendMail() {
+		var link = "mailto:mikekellymusic@gmail.com"
+				+ "?cc=myCCaddress@example.com"
+				+ "&subject=" + escape("This is my subject")
+				+ "&body=" + escape(document.getElementById('myText').value)
+		;
+		
+		window.location.href = link;		
+	}
 
 });	

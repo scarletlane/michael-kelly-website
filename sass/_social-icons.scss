@@ -9,5 +9,8 @@
 		img {
 			width: 225px;
 		}
+		img:hover {
+			@include scale(1.1);
+		}
 	}
 }

@@ -18,7 +18,7 @@
         <nav class="navbar">
             <div class="navbar-header">
                 <a class="navbar-title" href="http://www.officialmichaelkelly.com">Michael Kelly</a>
-            </div>
+            </div><!-- /.navbar-header--> 
             <div class="navbar-collapse">
                 <ul>
                     <li class="home"><a href="http://www.officialmichaelkelly.com">Home</a></li>
@@ -30,11 +30,44 @@
                     <li class="bio"><a href="bio.html">Bio</a></li>
                     <li class="active"><a href="contact.html">Contact</a></li>
                 </ul>  
-            </div>  
-        </nav>
+            </div><!-- /.navbar-collapse-->   
+        </nav><!-- /.navbar --> 
 
         <div class="content">
-        </div>    
+            <div id="form-main">
+                <div id="form-div">
+                    <form class="form" id="form1" method="post" action="js/sendemail.php">
+      
+                      <p class="name">
+                        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+                      </p>
+                      
+                      <p class="email">
+                        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+                      </p>
+                      
+                      <p class="text">
+                        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+                      </p>
+
+                    <div class="submit">
+                        <input type="submit" value="Submit" id="button-blue"/>
+                        <div class="ease"></div>
+                    </div><!-- /.submit --> 
+
+                    </form><!-- /.form --> 
+                </div><!-- /#form-div -->     
+            </div><!-- /#form-main -->
+            <div class="social-icons-sm">
+                <ul>
+                    <li class="facebook"><a href="http://www.facebook.com/officialmichaelkelly"><img src="img/icons/facebook.png"></a></li>
+                    <li class="twitter"><a href="http://www.twitter.com/mkellymusic"><img src="img/icons/twitter.png"></a></li>
+                    <li class="instagram"><a href="http://www.http://instagram.com/mkellymusic"><img src="img/icons/instagram.png"></a></li>
+                    <li class="pinterest"><a href="http://www.pinterest.com/michaelkelly777"><img src="img/icons/pinterest.png"></a></li>
+                    <li class="youtube"><a href="http://www.youtube.com/mikekellymusic"><img src="img/icons/youtube.png"></a></li>
+                </ul>
+            </div><!-- /.social-icons-sm --> 
+        </div><!-- /.content -->     
 
 
     </div><!-- /.container --> 

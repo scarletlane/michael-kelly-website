@@ -1,0 +1,19 @@
+.social-icons-sm {
+	position: absolute;
+	ul {
+		width: 520px;
+		margin-top: 501px;
+		margin-bottom: 20px;
+		padding-left: 339px;
+		li {
+			list-style: none;
+			display: inline;
+		}
+		img {
+			width: 100px;
+		}	
+		img:hover {
+			@include scale(1.2);
+		}
+	}
+}
