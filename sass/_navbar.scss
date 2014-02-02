@@ -74,6 +74,16 @@
 
 @media #{$phones} {
 	.navbar {
+		width: 98%;
+		left: .8%;
+		top: 4px;
+	}
+	.navbar-header {
+		.navbar-title {
+			font-size: 18px;
+		}
+	}	
+	.navbar-collapse {
 		display: none;
 	}
 }

@@ -147,13 +147,16 @@ input:focus, textarea:focus {
 }
 
 @media #{$phones} {
+	#form-main {
+		top: 60px;
+	}
 	#form-div{
 		left: 3%;
 		margin: auto 3% auto 0;
 		width: 88%;
 		padding: 3%;
 	}
-	.submit {
+	.submit, .ease {
 		height: 52px;
 	}
 	#button-blue {

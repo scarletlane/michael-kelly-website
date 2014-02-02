@@ -6,7 +6,6 @@
 		display: block;
 		z-index: 1000;
 		width: 300px;
-		height: 500px;
 		margin: 0 auto;
 		.menu-icon{
 			&:before {
@@ -16,10 +15,9 @@
       		}
 		    display: block;
 		    position: absolute;
-		    padding: 0 132.5px;
-		    margin: 0 auto;
-		    top: -15px;
+		    top: -17px;
 		    z-index: 1000;
+		    right: 3%;
 		}
 		ul {
 			display: none;
@@ -31,14 +29,6 @@
 				padding: 0;
 			}
 		}
-		.mobile-title {
-			font-size: 24px;
-			font-family: "Engravers MT";
-			width: 300px;
-			margin: 200px auto 0 auto;
-			color: $paleGreen;
-			text-align: center;
-		}
 	}
 	.mobile-nav.is-tapped  > ul {
 		display:  block;
@@ -48,8 +38,11 @@
 		top: 0;
 		z-index: 100;
 		padding-top: 40px;
-		width: 100%;
+		width: 30%;
 		background: rgba(255,255,255,.7);
+		li {
+			border-top: $grey 1px;
+		}
 		a {
 			@include box-sizing(border-box);
 			width: 100%;
@@ -59,10 +52,13 @@
 			color: $paleGreen;
 			font-size: 18px;
 			line-height: 20px;
-			font-family: "Impact";
-			text-align: center;
+			font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+			text-align: left;
 			text-decoration: none;  
 			-webkit-font-smoothing: antialiased;
+		}
+		.active-mobile {
+			background-color: $grey;
 		}
 	}					
 }	
