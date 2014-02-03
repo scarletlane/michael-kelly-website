@@ -75,12 +75,13 @@
 @media #{$phones} {
 	.navbar {
 		width: 98%;
-		left: .8%;
+		margin: auto;
+		left: auto;
 		top: 4px;
 	}
 	.navbar-header {
 		.navbar-title {
-			font-size: 18px;
+			font-size: 16px;
 		}
 	}	
 	.navbar-collapse {

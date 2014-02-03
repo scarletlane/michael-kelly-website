@@ -149,12 +149,24 @@ input:focus, textarea:focus {
 @media #{$phones} {
 	#form-main {
 		top: 60px;
+		left: auto;
+		position: absolute;
+		width: 100%;
+		height: 326px;
+		margin: auto;
 	}
 	#form-div{
-		left: 3%;
-		margin: auto 3% auto 0;
-		width: 88%;
-		padding: 3%;
+		position: relative;
+		float: none;
+		left: auto;
+		width: 90%;
+		padding: 8px;
+		padding-bottom: 12px;
+		margin: auto;
+		textarea {
+			height: 110px;
+			margin-bottom: 6px;
+		}
 	}
 	.submit, .ease {
 		height: 52px;

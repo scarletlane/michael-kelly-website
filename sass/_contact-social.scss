@@ -17,3 +17,18 @@
 		}
 	}
 }
+@media #{$phones} {
+	.social-icons-sm {
+		margin: 0 auto;
+		top: 60.5%;
+		width: 100%;
+		ul {
+			width: 316px;
+			margin: 0 auto;
+			padding: 0;		
+			img {
+				width: 60px;
+			}
+		}
+	}
+}	

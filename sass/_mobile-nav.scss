@@ -37,11 +37,11 @@
 		right: 0;
 		top: 0;
 		z-index: 100;
-		padding-top: 40px;
+		margin-top: 40px;
 		width: 30%;
-		background: rgba(255,255,255,.7);
+		background-color: $blue;
 		li {
-			border-top: $grey 1px;
+			border-top: 1px solid $darkblue;
 		}
 		a {
 			@include box-sizing(border-box);
@@ -49,7 +49,7 @@
 			display: block;
 			padding: 10px 20px;
 			height: auto;
-			color: $paleGreen;
+			color: $white;
 			font-size: 18px;
 			line-height: 20px;
 			font-family: 'Montserrat', Helvetica, Arial, sans-serif;
@@ -58,7 +58,7 @@
 			-webkit-font-smoothing: antialiased;
 		}
 		.active-mobile {
-			background-color: $grey;
+			background-color: $darkblue;
 		}
 	}					
 }	
