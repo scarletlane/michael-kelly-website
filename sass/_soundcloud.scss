@@ -4,3 +4,14 @@ iframe {
 .last {
 	margin-bottom: 35px;
 }
+@media #{$phones} {
+	.listen-content {
+		margin-top: 7px;
+	}
+	iframe {
+		margin-top: 3px;
+	}
+	.last {
+		margin-bottom: 3px;
+	}
+}
