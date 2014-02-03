@@ -14,3 +14,34 @@
 		}
 	}
 }
+
+@media #{$phones} {
+	.social-icons {
+		margin-top: 20px;
+		ul {
+			margin: 0;
+			li {
+				float: none;
+				position: absolute;
+			}
+			img {
+				width: 75px;
+			}
+			.facebook {
+				margin: auto 0 auto 38%;
+			}
+			.twitter {
+				margin: 17% 0 auto 58%;
+			}
+			.instagram {
+				margin: 40% 0 auto 51%;
+			}
+			.pinterest {
+				margin: 40% 0 auto 25%;
+			}
+			.youtube {
+				margin: 17% 0 auto 18%;
+			}
+		}
+	}
+}
