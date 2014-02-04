@@ -4,3 +4,10 @@
 	height: 675px;
 	margin-top: 20px;
 }
+
+@media #{$phones} {
+	.player {
+		width: 100%;
+		height: 56.25%;
+	}
+}
