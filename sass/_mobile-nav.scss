@@ -43,6 +43,9 @@
 		li {
 			border-top: 1px solid $darkblue;
 		}
+		li:hover {
+			background-color: $darkblue;
+		}
 		a {
 			@include box-sizing(border-box);
 			width: 100%;
