@@ -26,6 +26,9 @@
 }
 @media #{$phones} {
 	.deer {
+		width: 100%;
+		margin: 0 auto 0 15px;
 		display: block;
+		top: 20px;
 	}	
 }
