@@ -13,3 +13,16 @@
 			@include scale(1.2);
 	}
 }
+
+@media #{$phones} {
+	#instafeed {
+		margin: 10px auto;
+		width: 210px;
+		a {
+			margin: auto;
+		}
+		img:hover {
+			@include scale (1.1);
+		}
+	}
+}
