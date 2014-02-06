@@ -1,67 +1,75 @@
+
 .mobile-nav {
 	display: none;
-}	
+	z-index: 1000;
+	width: 300px;
+	margin: 0 auto;
+	.menu-icon{
+		&:before {
+    		content: "\2261";
+    		font-size: 4em;
+    		color: $paleGreen;
+  		}
+	    display: block;
+	    position: absolute;
+	    top: -17px;
+	    z-index: 1000;
+	    right: 3%;
+	}
+	ul {
+		display: none;
+
+		li {
+			float:	none;
+			display: block;
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
+.mobile-nav.is-tapped  > ul {
+	display:  block;
+	position: absolute;
+	margin: 0;
+	right: 0;
+	top: 0;
+	z-index: 100;
+	margin-top: 40px;
+	width: 140px;
+	background-color: $blue;
+	li {
+		border-top: 1px solid $darkblue;
+	}
+	li:hover {
+		background-color: $darkblue;
+	}
+	a {
+		@include box-sizing(border-box);
+		width: 100%;
+		display: block;
+		padding: 8px 20px;
+		height: auto;
+		color: $white;
+		font-size: 18px;
+		line-height: 20px;
+		font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+		text-align: left;
+		text-decoration: none;  
+		-webkit-font-smoothing: antialiased;
+	}
+	.active-mobile {
+		background-color: $darkblue;
+	}
+}					
+
 @media #{$phones} {
 	.mobile-nav {
 		display: block;
-		z-index: 1000;
-		width: 300px;
-		margin: 0 auto;
-		.menu-icon{
-			&:before {
-        		content: "\2261";
-        		font-size: 4em;
-        		color: $paleGreen;
-      		}
-		    display: block;
-		    position: absolute;
-		    top: -17px;
-		    z-index: 1000;
-		    right: 3%;
-		}
-		ul {
-			display: none;
-
-			li {
-				float:	none;
-				display: block;
-				margin: 0;
-				padding: 0;
-			}
-		}
 	}
-	.mobile-nav.is-tapped  > ul {
-		display:  block;
-		position: absolute;
-		margin: 0;
-		right: 0;
-		top: 0;
-		z-index: 100;
-		margin-top: 40px;
-		width: 140px;
-		background-color: $blue;
-		li {
-			border-top: 1px solid $darkblue;
-		}
-		li:hover {
-			background-color: $darkblue;
-		}
-		a {
-			@include box-sizing(border-box);
-			width: 100%;
-			display: block;
-			padding: 8px 20px;
-			height: auto;
-			color: $white;
-			font-size: 18px;
-			line-height: 20px;
-			font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-			text-align: left;
-			text-decoration: none;  
-			-webkit-font-smoothing: antialiased;
-		}
-		.active-mobile {
-			background-color: $darkblue;
-		}
-	}					
+}
+
+@media #{$tablets-port} {
+	.mobile-nav {
+		display: block;
+	}
 }	

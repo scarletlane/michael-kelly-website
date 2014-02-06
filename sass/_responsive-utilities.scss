@@ -1,5 +1,5 @@
-$phones: "only screen and (max-width: 480px)";
-$tablets-port: "only screen and (max-width: 768px)";
-$tablets-land: "only screen and (max-width: 1024px)";
+$phones: "only screen and (max-width: 560px)";
+$tablets-port: "only screen and (min-width: 561px) and (max-width: 768px)";
+$tablets-land: "only screen and (min-width: 769px) and (max-width: 1024px)";
 $laptop: "only screen and (max-width: 1200)";
 $large: "only screen and (min-width: 1201)";
