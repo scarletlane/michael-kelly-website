@@ -31,4 +31,20 @@
 			}
 		}
 	}
+}
+
+@media #{$tablets-port} {
+	.social-icons-sm {
+		margin: 0 auto;
+		top: 600px;
+		width: 100%;
+		ul {
+			width: 516px;
+			margin: 0 auto;
+			padding: 0;		
+			img {
+				width: 100px;
+			}
+		}		
+	}
 }	

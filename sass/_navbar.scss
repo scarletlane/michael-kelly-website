@@ -88,3 +88,19 @@
 		display: none;
 	}
 }
+
+@media #{$tablets-port} {
+	.navbar {
+		width: 90%;
+		margin: 0 auto;
+		left: auto;
+		top: 30px;
+	}
+	.navbar-collapse {
+		display: none;
+	}	
+}
+
+
+
+
