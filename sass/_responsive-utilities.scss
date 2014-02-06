@@ -1,5 +1,14 @@
-$phones: "only screen and (max-width: 560px)";
-$tablets-port: "only screen and (min-width: 561px) and (max-width: 768px)";
-$tablets-land: "only screen and (min-width: 769px) and (max-width: 1024px)";
-$laptop: "only screen and (max-width: 1200)";
-$large: "only screen and (min-width: 1201)";
+/*phone*/
+$xsmall: "only screen and (max-width: 560px)";
+
+/*portrait tablet*/
+$small: "only screen and (min-width: 561px) and (max-width: 768px)";
+
+/*landscape tablet*/
+$medium: "only screen and (min-width: 769px) and (max-width: 1024px)";
+
+/*small monitor*/
+$large: "only screen and (min-width: 1025px) and (max-width: 1299px)";
+
+/*default, large monitor*/
+$xlarge: "only screen and (min-width: 1300)";

@@ -62,13 +62,19 @@
 	}
 }					
 
-@media #{$phones} {
+@media #{$xsmall} {
 	.mobile-nav {
 		display: block;
 	}
 }
 
-@media #{$tablets-port} {
+@media #{$small} {
+	.mobile-nav {
+		display: block;
+	}
+}
+
+@media #{$medium} {
 	.mobile-nav {
 		display: block;
 	}

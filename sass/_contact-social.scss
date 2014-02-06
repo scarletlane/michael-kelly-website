@@ -1,10 +1,9 @@
-.social-icons-sm {
-	position: absolute;
+.contact-social {
+	position: relative;
+	width: 521px;
+	margin: 0 auto;
+	top: 480px;
 	ul {
-		width: 520px;
-		margin-top: 501px;
-		margin-bottom: 20px;
-		padding-left: 339px;
 		li {
 			list-style: none;
 			display: inline;
@@ -17,34 +16,33 @@
 		}
 	}
 }
-@media #{$phones} {
-	.social-icons-sm {
-		margin: 0 auto;
-		top: 385px;
-		width: 100%;
+
+@media #{$xsmall} {
+	.contact-social {
+		width: 316px;		
+		top: 330px;	
 		ul {
-			width: 316px;
-			margin: 0 auto;
-			padding: 0;		
 			img {
 				width: 60px;
-			}
+			}	
 		}
 	}
 }
 
-@media #{$tablets-port} {
-	.social-icons-sm {
-		margin: 0 auto;
-		top: 600px;
-		width: 100%;
-		ul {
-			width: 516px;
-			margin: 0 auto;
-			padding: 0;		
-			img {
-				width: 100px;
-			}
-		}		
+@media #{$small} {
+	.contact-social {		
+		top: 550px;	
+	}
+}
+
+@media #{$medium} {
+	.contact-social {		
+		top: 555px;	
+	}
+}
+
+@media #{$large} {
+	.contact-social {		
+		top: 585px;	
 	}
 }	

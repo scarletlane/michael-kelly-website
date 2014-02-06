@@ -1,12 +1,12 @@
 .navbar {
-	margin-bottom: 20px;
+	margin: 35px auto;
 	background-color: $offwhite;
 	border-radius: 4px;
 	position: relative;
 	min-height: 50px;
 	border: 1px solid transparent;
-	width: 1350px;
-	left: -75px;
+	width: 95%;
+	left: auto;
 }
 .navbar-header {
 	float: left;
@@ -60,7 +60,7 @@
 			}
 			a {
 				color: #777777;
-				padding: 15px;
+				padding: 15px 12px;
 				line-height: 20px;
 				display: block;
 			}
@@ -72,11 +72,10 @@
 	}
 }
 
-@media #{$phones} {
+@media #{$xsmall} {
 	.navbar {
 		width: 98%;
 		margin: auto;
-		left: auto;
 		top: 4px;
 	}
 	.navbar-header {
@@ -89,17 +88,46 @@
 	}
 }
 
-@media #{$tablets-port} {
+@media #{$small} {
 	.navbar {
 		width: 90%;
 		margin: 0 auto;
-		left: auto;
 		top: 30px;
 	}
 	.navbar-collapse {
 		display: none;
 	}	
 }
+
+@media #{$medium} {
+	.navbar {
+		width: 90%;
+		margin: 0 auto;
+		top: 30px;
+	}
+	.navbar-collapse {
+		display: none;
+	}	
+}
+
+@media #{$large} {
+	.navbar {
+		margin: 0 auto;
+		top: 25px;
+	}
+	.navbar-header {
+		.navbar-title {
+			font-size: 18px;
+		}
+	}
+	.navbar-collapse {
+		font-size: 12px;
+		ul > li > a {
+			padding: 15px 10px;
+		}
+	}		
+}
+
 
 
 

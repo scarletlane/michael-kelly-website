@@ -146,7 +146,7 @@ input:focus, textarea:focus {
   background-color:white;
 }
 
-@media #{$phones} {
+@media #{$xsmall} {
 	#form-main {
 		top: 60px;
 		left: auto;

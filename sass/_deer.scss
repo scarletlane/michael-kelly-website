@@ -7,7 +7,7 @@
 			width: 100%;
 		}
 }
-@media #{$phones} {
+@media #{$xsmall} {
 	.deer-home {
 		display: none;
 	}
@@ -24,7 +24,7 @@
 		width: 90%;
 	}
 }
-@media #{$phones} {
+@media #{$xsmall} {
 	.deer {
 		width: 100%;
 		margin: 0 auto 0 15px;

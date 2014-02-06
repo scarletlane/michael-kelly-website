@@ -1,15 +1,13 @@
+.listen-content {
+	margin: 40px;
+}
 iframe {
-	margin-top: 18px;
+	margin-top: 3px;
 }
-.last {
-	margin-bottom: 35px;
-}
-@media #{$phones} {
+
+@media #{$xsmall} {
 	.listen-content {
 		margin-top: 7px;
-	}
-	iframe {
-		margin-top: 3px;
 	}
 	.last {
 		margin-bottom: 3px;

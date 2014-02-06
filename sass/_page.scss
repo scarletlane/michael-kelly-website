@@ -14,19 +14,9 @@ a, li {
 }
 
 .container {
-	width: 1200px;
-	padding: 40px 0 0;
+	width: 100%;
 	min-height: 100%;
 	height: auto;
-	margin: 0 auto -344px;
-}
-
-@media #{$phones}, #{$tablets-port} {
-	.container {
-		width: 100%;
-		padding: 0;
-		margin: 0;
-	}
 }
 
 .content {
@@ -68,7 +58,7 @@ footer {
 .left {
 	left: 0;
 }
-@media #{$phones} {
+@media #{$xsmall} {
 	.top, .right, .bottom, .left, footer {
 		display: none;
 	}
