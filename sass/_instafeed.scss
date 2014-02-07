@@ -1,5 +1,6 @@
 #instafeed {
-	margin: 0 20px;
+	width: 1150px;
+	margin: 0 auto;
 	a {
 		padding:5px 5px 1px 5px;
 		margin:10px;
@@ -16,13 +17,34 @@
 
 @media #{$xsmall} {
 	#instafeed {
+		width: 210px;		
 		margin: 10px auto;
-		width: 210px;
 		a {
 			margin: auto;
 		}
 		img:hover {
 			@include scale (1.1);
 		}
+	}
+}
+
+@media #{$small} {
+	#instafeed {
+		width: 460px;
+		margin: 40px auto;
+	}
+}
+
+@media #{$medium} {
+	#instafeed {
+		width: 690px;
+		margin: 40px auto;
+	}
+}
+
+@media #{$large} {
+	#instafeed {
+		width: 921px;
+		margin: 30px auto;
 	}
 }
