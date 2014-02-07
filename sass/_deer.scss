@@ -1,17 +1,33 @@
 .deer-home {
+	width: 100%;
+	margin: 0 auto;
+	position: absolute;
+	top: 0;
+	z-index: 10;
+	img {
+		display: block;
 		width: 918px;
 		margin: 0 auto;
-		overflow: auto;
-		z-index: 10;
-		img {
-			width: 100%;
-		}
+	}
 }
 @media #{$xsmall} {
 	.deer-home {
 		display: none;
 	}
 }
+
+@media #{$small} {
+	.deer-home {
+		display: none;
+	}
+}
+
+@media #{$medium} {
+	.deer-home {
+		display: none;
+	}
+}
+
 .deer {
 	width: 300px;
 	margin: 0 auto;
@@ -28,6 +44,24 @@
 	.deer {
 		width: 100%;
 		margin: 0 auto 0 15px;
+		display: block;
+		top: 20px;
+	}	
+}
+
+@media #{$small} {
+	.deer {
+		width: 100%;
+		margin: 0 auto 0 40px;
+		display: block;
+		top: 20px;
+	}	
+}
+
+@media #{$medium} {
+	.deer {
+		width: 100%;
+		margin: 0 auto 0 40px;
 		display: block;
 		top: 20px;
 	}	

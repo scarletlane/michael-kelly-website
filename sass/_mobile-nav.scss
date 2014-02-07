@@ -1,6 +1,6 @@
 
 .mobile-nav {
-	display: none;
+	display: block;
 	z-index: 1000;
 	width: 300px;
 	margin: 0 auto;
@@ -62,20 +62,14 @@
 	}
 }					
 
-@media #{$xsmall} {
+@media #{$large} {
 	.mobile-nav {
-		display: block;
+		display: none;
 	}
 }
 
-@media #{$small} {
+@media #{$xlarge} {
 	.mobile-nav {
-		display: block;
-	}
-}
-
-@media #{$medium} {
-	.mobile-nav {
-		display: block;
+		display: none;
 	}
 }	

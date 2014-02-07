@@ -26,15 +26,15 @@ a, li {
 footer {
 	font-family: "Engravers MT";
 	color: $paleGreen;
-	position: absolute;
+	position: fixed;
 	left: 22px;
-	bottom: -35px;
+	bottom: 35px;
 }
 
 .top, .right, .bottom, .left {
 	background-color: $white;
 	position: fixed;
-	z-index: 15;
+	z-index: 1000;
 }
 .left, .right {
 	top: 0;

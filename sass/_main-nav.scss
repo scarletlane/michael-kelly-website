@@ -1,11 +1,10 @@
 .homenav {
 	font-size: 16px;
-	margin: 0 141px 0 141px;
 	height: 922px;
 	width: 918px;
-	overflow: hidden;
-	position: absolute;
-	z-index: 10;
+	margin: 0 auto;
+	position: relative;
+	z-index: 100;
 	.nav-button {
 		display: none;
 	}
@@ -55,7 +54,7 @@
 			left: 110px;
 		}
 		a:hover {
-			color: #847930; /* pick color */
+			color: $darkblue;
 			text-decoration: none;
 		}
 	}
@@ -65,3 +64,23 @@
 		display: none;
 	}
 }
+
+@media #{$small} {
+	.homenav {
+		display: none;
+	}
+}
+
+@media #{$medium} {
+	.homenav {
+		display: none;
+	}
+}
+
+@media #{$large} {
+	.homenav {
+		top: 0;
+	}
+}
+
+
