@@ -1,13 +1,38 @@
 .player {
-	position: absolute;
 	width: 1200px;
 	height: 675px;
-	margin-top: 20px;
+	display: block;
+	margin: 0 auto;
 }
 
 @media #{$xsmall} {
 	.player {
-		width: 100%;
-		height: 56.25%;
+		width: 320px;
+		height: 180px;
+		margin: 10px auto;
+	}
+}
+
+@media #{$small} {
+	.player {
+		width: 541px;
+		height: 304.31px;
+		margin: 40px auto;		
+	}
+}
+
+@media #{$medium} {
+	.player {
+		width: 729px;
+		height: 410.06px;
+		margin: 40px auto;		
+	}
+}
+
+@media #{$large} {
+	.player {
+		width: 980px;
+		height: 551.25px;
+		margin: 40px auto;
 	}
 }
