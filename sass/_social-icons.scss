@@ -1,10 +1,10 @@
 .social-icons {
 	ul {
-		margin-top: 170px;
-		margin-left: 40px;
+		width: 1141px;
+		margin: 170px auto;
 		li {
 			list-style: none;
-			float: left;
+			display: inline-block;
 		}
 		img {
 			width: 225px;
@@ -45,3 +45,58 @@
 		}
 	}
 }
+
+@media #{$small} {
+		.social-icons {
+		margin-top: 40px;
+		ul {
+			margin: 0;
+			li {
+				float: none;
+				position: absolute;
+			}
+			img {
+				width: 150px;
+			}
+			.facebook {
+				margin: auto 0 auto 38%;
+			}
+			.twitter {
+				margin: 17% 0 auto 58%;
+			}
+			.instagram {
+				margin: 42% 0 auto 51%;
+			}
+			.pinterest {
+				margin: 42% 0 auto 25%;
+			}
+			.youtube {
+				margin: 17% 0 auto 18%;
+			}			
+		}
+	}
+}
+
+@media #{$medium} {
+	.social-icons {
+		ul {
+			width: 717px;
+			img {
+				width: 140px;
+			}
+		}
+	}
+}
+
+@media #{$large} {
+	.social-icons {
+		ul {
+			width: 918px;
+			img {
+				width: 180px;
+			}
+		}
+	}
+}
+
+
