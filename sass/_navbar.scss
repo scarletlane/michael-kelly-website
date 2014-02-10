@@ -75,9 +75,9 @@
 
 @media #{$xsmall} {
 	.navbar {
-		width: 98%;
+		width: 100%;
 		margin: auto;
-		top: 4px;
+		border-radius: 0;
 	}
 	.navbar-header {
 		.navbar-title {
@@ -91,9 +91,9 @@
 
 @media #{$small} {
 	.navbar {
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
-		top: 30px;
+		border-radius: 0;
 	}
 	.navbar-collapse {
 		display: none;

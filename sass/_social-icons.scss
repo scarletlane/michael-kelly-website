@@ -17,62 +17,30 @@
 
 @media #{$xsmall} {
 	.social-icons {
-		margin-top: 20px;
 		ul {
-			margin: 0;
-			li {
-				float: none;
-				position: absolute;
-			}
+			width: 316px;
+			margin: 70px auto;
 			img {
-				width: 75px;
+				width: 60px;
 			}
-			.facebook {
-				margin: auto 0 auto 38%;
-			}
-			.twitter {
-				margin: 17% 0 auto 58%;
-			}
-			.instagram {
-				margin: 40% 0 auto 51%;
-			}
-			.pinterest {
-				margin: 40% 0 auto 25%;
-			}
-			.youtube {
-				margin: 17% 0 auto 18%;
-			}
+			img:hover {
+				@include scale(1.0);
+			}			
 		}
 	}
 }
 
 @media #{$small} {
-		.social-icons {
-		margin-top: 40px;
+	.social-icons {
 		ul {
-			margin: 0;
-			li {
-				float: none;
-				position: absolute;
-			}
+			width: 561px;
+			margin: 70px auto;			
 			img {
-				width: 150px;
+				width: 109px;
 			}
-			.facebook {
-				margin: auto 0 auto 38%;
-			}
-			.twitter {
-				margin: 17% 0 auto 58%;
-			}
-			.instagram {
-				margin: 42% 0 auto 51%;
-			}
-			.pinterest {
-				margin: 42% 0 auto 25%;
-			}
-			.youtube {
-				margin: 17% 0 auto 18%;
-			}			
+			img:hover {
+				@include scale(1.0);
+			}	
 		}
 	}
 }
@@ -84,6 +52,9 @@
 			img {
 				width: 140px;
 			}
+			img:hover {
+				@include scale(1.0);
+			}				
 		}
 	}
 }

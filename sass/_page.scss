@@ -7,6 +7,15 @@ body {
 	background-color: $background;
 }
 
+@font-face {
+	font-family: 'Engravers MT';
+	src: url('/fonts/engravers_mt.eot');
+	src: url('/fonts/engravers_mt.woff') format('woff'),
+		 url('/fonts/engravers_mt.ttf') format('truetype'); 
+	font-weight: normal; 
+	font-style: normal;
+}
+
 a, li {
 	text-decoration: none;
 	font-family: "Engravers MT";
@@ -58,8 +67,15 @@ footer {
 .left {
 	left: 0;
 }
+
 @media #{$xsmall} {
 	.top, .right, .bottom, .left, footer {
 		display: none;
 	}
-}  	
+}
+
+@media #{$small} {
+	.top, .right, .bottom, .left, footer {
+		display: none;
+	}
+}   	
